@@ -1,7 +1,7 @@
 import { MapPin, Clock, Heart, Sparkles, Wrench, CheckCircle, User } from 'lucide-react';
 
 const stats = [
-  { value: '10+', label: 'Years Experience', icon: Clock },
+  { value: '30+', label: 'Years Experience', icon: Clock },
   { value: '500+', label: 'Projects Completed', icon: CheckCircle },
   { value: '100%', label: 'Satisfaction Goal', icon: Heart },
 ];
@@ -99,10 +99,10 @@ export default function About() {
             {/* Story */}
             <div className="prose prose-lg mb-10">
               <p className="text-xl text-gray-600 leading-relaxed">
-                Hi, I&apos;m <strong className="text-brand-blue-dark">Robert Machol</strong>, and I&apos;ve been helping Canton homeowners with home improvement projects for over a decade.
+                Hi, I&apos;m <strong className="text-brand-blue-dark">Robert Machol</strong>. After 30 years in highrise construction, I discovered my true passion: helping Canton homeowners with their projects.
               </p>
               <p className="text-gray-600">
-                Whether it&apos;s installing a ceiling fan, fixing up your garage, or tackling that bathroom repair you&apos;ve been putting off – I&apos;m here to help make your home better. No project is too small, and every job gets my full attention.
+                I&apos;m extremely detail-oriented and treat every home and project like it&apos;s my own. Whether it&apos;s installing a ceiling fan, fixing up your garage, or tackling that bathroom repair you&apos;ve been putting off – no project is too small, and every job gets my complete attention.
               </p>
             </div>
 

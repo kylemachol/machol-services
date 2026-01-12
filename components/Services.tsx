@@ -6,7 +6,6 @@ import {
   Home,
   SquareStack,
   Bath,
-  ArrowRight,
   Phone,
   Star
 } from 'lucide-react';
@@ -134,15 +133,6 @@ export default function Services() {
                 ))}
               </ul>
 
-              {/* CTA */}
-              <a
-                href="tel:404-597-4945"
-                className="inline-flex items-center gap-2 text-brand-blue font-semibold group-hover:text-brand-blue-dark transition-colors"
-              >
-                Schedule Service
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </a>
-
               {/* Hover accent line */}
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-brand-yellow scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
             </div>
@@ -152,10 +142,9 @@ export default function Services() {
         {/* Secondary Services - Compact Row */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {secondaryServices.map((service, index) => (
-            <a
+            <div
               key={service.title}
-              href="tel:404-597-4945"
-              className={`group relative p-6 rounded-2xl text-white overflow-hidden transition-all hover:scale-105 ${service.color}`}
+              className={`relative p-6 rounded-2xl text-white overflow-hidden ${service.color}`}
             >
               {/* Background pattern */}
               <div className="absolute inset-0 opacity-10">
@@ -177,12 +166,7 @@ export default function Services() {
               <p className="text-sm text-white/80 relative leading-relaxed">
                 {service.description}
               </p>
-
-              {/* Hover arrow */}
-              <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                <ArrowRight className="w-5 h-5 text-brand-yellow" />
-              </div>
-            </a>
+            </div>
           ))}
         </div>
 
